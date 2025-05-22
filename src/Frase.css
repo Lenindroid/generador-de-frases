@@ -1,0 +1,32 @@
+#quote-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-contenedor {
+    flex: 1;
+}
+
+.imagen-contenedor img {
+    object-fit: contain;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 2;
+    font-size: 1.5rem;
+}
+
+#text {
+    font-size: 3em;
+    white-space: normal;     /* Permite saltos de línea automáticos */
+    word-wrap: break-word;   /* Rompe palabras largas si es necesario */
+    text-align: left;        /* Alinea el texto a la izquierda */
+}
+
+#author {
+    text-align: left; 
+}
