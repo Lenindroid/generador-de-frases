@@ -28,14 +28,16 @@ let fraseInicial = frases[aleatorio(0, frases.length - 1)];
 function Frase() {
   return (
     <article id="quote-box">
-      <div className='imagen-contenedor'>
-        <img src={fraseInicial.imagen}/>
-      </div>
-      <div className="textos">
-        <p id="text">{fraseInicial.frase}</p>
-        <p id="author">-Frases que {fraseInicial.autor} {fraseInicial.dijo} dijo</p>
-      </div>
-      
+      <section className="up">
+        <div className='imagen-contenedor'>
+          <img src={fraseInicial.imagen}/>
+        </div>
+        <div className="textos">
+          <p id="text">{fraseInicial.frase}</p>
+          <p id="author">-Frases que {fraseInicial.autor} {fraseInicial.dijo} dijo</p>
+        </div>
+      </section>
+      <Controladores />
     </article>
   )
 }
