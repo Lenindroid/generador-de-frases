@@ -1,6 +1,9 @@
 #quote-box {
     height: 35rem;
     width: 100vw;
+    margin: 0 auto;
+    max-width: 2000px; /* o el ancho que desees */
+    width: 90%;
 }
 
 #quote {
